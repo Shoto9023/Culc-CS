@@ -10,18 +10,6 @@ namespace Culculator
 	{
 		static void Main(string[] args)
 		{
-			//起動処理
-			Console.WriteLine("単純四則計算器");
-			Console.Write("起動処理中です");
-			System.Threading.Thread.Sleep(500);
-			Console.Write(" .");
-			System.Threading.Thread.Sleep(500);
-			Console.Write(" .");
-			System.Threading.Thread.Sleep(500);
-			Console.Write(" .");
-			System.Threading.Thread.Sleep(500);
-			Console.Clear();
-			
 			//Hello
 			Console.WriteLine("こちらは単純四則計算機です");
 			Console.WriteLine("計算式は(x)(s)(y)です");
@@ -31,7 +19,7 @@ namespace Culculator
 			Console.WriteLine(" ");
 			Console.WriteLine("変数xを受け付けます");
 			Console.WriteLine("整数を入力してください…");
-			
+
 			//xを定義
 			int x, y;
 			inputx:
@@ -132,15 +120,8 @@ namespace Culculator
 			string h = Console.ReadLine();
 			if ( h == "Y" )
 			{
-				Console.Write("再計算に移行します");
-				System.Threading.Thread.Sleep(500);
-				Console.Write(" .");
-				System.Threading.Thread.Sleep(500);
-				Console.Write(" .");
-				System.Threading.Thread.Sleep(500);
-				Console.Write(" .");
-				System.Threading.Thread.Sleep(500);
-				Console.Clear();
+				Console.Write("再計算に移行します...\r\n1秒待っています...");
+				System.Threading.Thread.Sleep(1000);
 				goto HELLO;
 			}
 			else if ( h == "N" )
