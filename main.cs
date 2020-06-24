@@ -27,11 +27,12 @@ namespace Culculator
 			Console.WriteLine("計算式は(x)(s)(y)です");
 			HELLO: //計算開始ジャンプ
 
-			//変数xを定義
+			//プロンプト
 			Console.WriteLine(" ");
 			Console.WriteLine("変数xを受け付けます");
 			Console.WriteLine("整数を入力してください…");
-
+			
+			//xを定義
 			int x, y;
 			inputx:
 			try
@@ -74,10 +75,11 @@ namespace Culculator
 				goto JUMP;
 			}
 
-			//変数yを定義
+			//プロンプト
 			Console.WriteLine("変数yを受け付けます");
 			Console.WriteLine("整数を入力してください…");
 
+			//yを定義
 			inputy:
 			try
 			{
